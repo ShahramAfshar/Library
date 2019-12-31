@@ -252,6 +252,16 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library.DataModel\Library.DataModel.csproj">
+      <Project>{f0f4983e-58bf-4107-941b-2000fdc2d747}</Project>
+      <Name>Library.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library.Data\Library.Data.csproj">
+      <Project>{4c4679fc-8cb1-465f-a084-ac1c31a23e24}</Project>
+      <Name>Library.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

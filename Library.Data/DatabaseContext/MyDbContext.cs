@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace News.Data.DatabaseContext
+namespace library.Data.DatabaseContext
 {
    public class MyDbContext : IdentityDbContext
     {

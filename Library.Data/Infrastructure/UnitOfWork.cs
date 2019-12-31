@@ -6,7 +6,7 @@ using System.Data.Entity;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace News.Data
+namespace library.Data
 {
     public class UnitOfWork<TContext> : IUnitOfWork<TContext> where TContext : DbContext, new()
 
@@ -41,19 +41,19 @@ namespace News.Data
 
         #region Repositories
 
-        private TagRepository tagRepository;
-        public TagRepository TagRepository
-        {
-            get
-            {
-                if (tagRepository == null)
-                {
-                    tagRepository = new TagRepository(db);
-                }
+        //private TagRepository tagRepository;
+        //public TagRepository TagRepository
+        //{
+        //    get
+        //    {
+        //        if (tagRepository == null)
+        //        {
+        //            tagRepository = new TagRepository(db);
+        //        }
 
-                return tagRepository;
-            }
-        }
+        //        return tagRepository;
+        //    }
+        //}
 
 
 
