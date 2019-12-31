@@ -20,5 +20,13 @@ namespace Library.DataModel.Models
 
         [Display(Name = "برگشت داده شده")]
         public bool IsReturn { get; set; }
+
+
+
+        public virtual ExistBook ExistBook { get; set; }
+        public int ExistBookId { get; set; }
+
+        public virtual Aza Aza { get; set; }
+        public int AzaId { get; set; }
     }
 }

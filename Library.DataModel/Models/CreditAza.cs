@@ -20,5 +20,9 @@ namespace Library.DataModel.Models
 
         [Display(Name = "مبلغ پرداخت")]
         public decimal Pay { get; set; }
+
+
+        public virtual Aza  Aza { get; set; }
+        public int AzaId { get; set; }
     }
 }

@@ -12,6 +12,6 @@ namespace Library.DataModel.Models
         [Key]
         public int WriterId { get; set; }
 
-
+        public virtual ICollection<Book> Books { get; set; }
     }
 }

@@ -18,5 +18,9 @@ namespace Library.DataModel.Models
 
         [Display(Name = "اعتبار عضویت")]
         public DateTime EndOzviat { get; set; }
+
+        public virtual IEnumerable<CreditAza>  CreditAzas { get; set; }
+        public virtual IEnumerable<BorowBook>  BorowBooks { get; set; }
+
     }
 }

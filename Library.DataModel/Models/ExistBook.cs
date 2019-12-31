@@ -18,5 +18,10 @@ namespace Library.DataModel.Models
         [Display(Name = "تعداد موجود")]
         public int Count { get; set; }
 
+
+        public virtual Book  Book { get; set; }
+
+        public virtual ICollection<BorowBook>  BorowBooks { get; set; }
+
     }
 }

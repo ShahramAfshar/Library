@@ -26,5 +26,11 @@ namespace Library.DataModel.Models
         public DateTime CreatDate { get; set; }
 
 
+        public virtual Writer  Writer { get; set; }
+        public int WriterId { get; set; }
+
+        public virtual ExistBook  ExistBook { get; set; }
+
+
     }
 }
