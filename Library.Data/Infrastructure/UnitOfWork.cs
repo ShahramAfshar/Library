@@ -1,5 +1,5 @@
 ﻿
-using News.Data.Repositories;
+using Library.Data.Repository;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -41,21 +41,89 @@ namespace library.Data
 
         #region Repositories
 
-        //private TagRepository tagRepository;
-        //public TagRepository TagRepository
-        //{
-        //    get
-        //    {
-        //        if (tagRepository == null)
-        //        {
-        //            tagRepository = new TagRepository(db);
-        //        }
+        private AzaRepository azaRepository;
+        public AzaRepository AzaRepository
+        {
+            get
+            {
+                if (azaRepository == null)
+                {
+                    azaRepository = new AzaRepository(db);
+                }
 
-        //        return tagRepository;
-        //    }
-        //}
+                return azaRepository;
+            }
+        }
 
+        private WriterRepository writerRepository;
+        public WriterRepository WriterRepository
+        {
+            get
+            {
+                if (writerRepository == null)
+                {
+                    writerRepository = new WriterRepository(db);
+                }
 
+                return writerRepository;
+            }
+        }
+
+        private BookRepository bookRepository;
+        public BookRepository BookRepository
+        {
+            get
+            {
+                if (bookRepository == null)
+                {
+                    bookRepository = new BookRepository(db);
+                }
+
+                return bookRepository;
+            }
+        }
+
+        private BorowRepository borowRepository;
+        public BorowRepository BorowRepository
+        {
+            get
+            {
+                if (borowRepository == null)
+                {
+                    borowRepository = new BorowRepository(db);
+                }
+
+                return borowRepository;
+            }
+        }
+
+        private CreditazaRepository creditazaRepository;
+        public CreditazaRepository CreditazaRepository
+        {
+            get
+            {
+                if (creditazaRepository == null)
+                {
+                    creditazaRepository = new CreditazaRepository(db);
+                }
+
+                return creditazaRepository;
+            }
+        }
+
+        private BookExistRepository bookExistRepository;
+        public BookExistRepository BookExistRepository
+        {
+            get
+            {
+                if (bookExistRepository == null)
+                {
+                    bookExistRepository = new BookExistRepository(db);
+                }
+
+                return bookExistRepository;
+            }
+        }
 
         #endregion
 
